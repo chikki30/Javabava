@@ -1,4 +1,4 @@
-public class StringPractice3 {
+public class practice1 {
 
     public static void main(String[] args) {
 
