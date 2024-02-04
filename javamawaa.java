@@ -1,5 +1,3 @@
-package scmethod3;
-
 public class javamawaa
 {
     static int max(int ...A)
