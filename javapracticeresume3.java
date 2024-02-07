@@ -1,56 +1,60 @@
+import java.util.*;
 
-
-
-public class javapracticeresume3;
-{
-    private float coffeQty;
-    private float milkQty;
-    private float waterQty;
-    private float sugarQty;
-
-    static private CoffeeMachine my=null;
-
-    private CoffeeMachine()
-    {
-        coffeQty=1;
-        milkQty=1;
-        waterQty=1;
-        sugarQty=1;
-    }
-
-    public void fillWater(float qty)
-    {
-        waterQty=qty;
-    }
-    public void fillSugar(float qty)
-    {
-        sugarQty=qty;
-    }
-    public float getCoffee()
-    {
-        return 0.15f;
-    }
-
-    static CoffeeMachine getInstance()
-    {
-        if(my==null)
-            my=new CoffeeMachine();
-        return my;
-    }
-
-
-}
-public class Singleton
+public class SCLoop1
 {
     public static void main(String[] args)
     {
-        CoffeeMachine m1=CoffeeMachine.getInstance();
-        CoffeeMachine m2=CoffeeMachine.getInstance();
-        CoffeeMachine m3=CoffeeMachine.getInstance();
+        Scanner sc=new Scanner(System.in);
 
-        System.out.println(m1+" "+m2+" "+m3);
-        if(m1==m2 && m1==m3)
-            System.out.println("Same");
+        System.out.println("Enter a Number");
+        int n=sc.nextInt();
+
+        long fact=1;
+
+        for(int i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+
+        System.out.println("Factorial is "+fact);
 
     }
+
+
+
+    /* Sum of n Natural Numbers
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter a Number");
+        int n=sc.nextInt();
+
+           int sum=0;
+
+        for(int i=1;i<=n;i++)
+        {
+            sum=sum+i;
+        }
+
+        System.out.println("Sum of "+n+" Number is "+sum);
+
+
+    }*/
+
+    /* Display Multiplication Table
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter a Number");
+        int n=sc.nextInt();
+
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(n+" x "+i+" = "+n*i);
+        }
+
+
+    }  */
 }
