@@ -1,5 +1,4 @@
-
-public class Practiceswitch
+class Practiceswitch
 {
 
     public static void main(String[] args)
