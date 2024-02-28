@@ -1,6 +1,6 @@
 package MethodOverloading;
 
-public class
+public class Overloading
 {
     static int max(int ...A)
     {
