@@ -1,6 +1,6 @@
 package MethodOverloading;
 
-public class SCMethod3
+public class
 {
     static int max(int ...A)
     {
